@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+//Most hex methods derived from: https://www.redblobgames.com/grids/hexagons/
 public partial class HexUtilities : MonoBehaviour
 {
     public enum Direction
@@ -17,7 +18,7 @@ public partial class HexUtilities : MonoBehaviour
 
     public static Dictionary<Direction, HexAxial> neighbors = new()
     {
-        [Direction.NORTHWEST] = new HexAxial(0,1),
+        [Direction.NORTHWEST] = new HexAxial(0, 1),
         [Direction.NORTHEAST] = new HexAxial(1, 1),
         [Direction.EAST] = new HexAxial(1, 0),
         [Direction.SOUTHEST] = new HexAxial(0, -1),
@@ -37,7 +38,7 @@ public partial class HexUtilities : MonoBehaviour
 
     public static HexCube CubeRound(HexFrac hexFrac)
     {
-        
+
         int q = Mathf.RoundToInt(hexFrac.q);
         int r = Mathf.RoundToInt(hexFrac.r);
         int s = Mathf.RoundToInt(hexFrac.s);
@@ -47,14 +48,14 @@ public partial class HexUtilities : MonoBehaviour
         float s_diff = Mathf.Abs(s - hexFrac.s);
 
         if (q_diff > r_diff && q_diff > s_diff)
-            { q = -r - s; }
+        { q = -r - s; }
         else if (r_diff > s_diff)
-            { r = -q - s; }
+        { r = -q - s; }
         else
-            { s = -q - r; }
+        { s = -q - r; }
 
-            
-        return new HexCube(-q, r, s); 
+
+        return new HexCube(-q, r, s);
     }
 
     public static HexAxial AxialRound(HexFrac hexFrac)
