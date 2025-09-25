@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
+//taken from this video: https://www.youtube.com/watch?v=EPaSmQ2vtek
 public struct Face
 {
     public List<Vector3> vertices { get; private set; }
@@ -31,7 +32,6 @@ public class HexRenderer : MonoBehaviour
     [SerializeField] private bool isFlatTopped;
     private List<Face> faces;
 
-    //taken from somewhere
     // ------------ MONOBEHAVIOUR FUNCTIONS -------------------------------------------------------
     private void Awake()
     {
