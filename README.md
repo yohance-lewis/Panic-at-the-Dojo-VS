@@ -1,2 +1,3 @@
 # Panic at the Dojo VS
-A digitization of the Tabletop RPG Panic at the Dojo by VelMini
+A digitization of the Tabletop RPG [Panic at the Dojo](https://liberigothica.itch.io/panic-at-the-dojo) by Vel Mini made in the Unity game engine. This was made from the skeleton of [this course](https://www.gamedev.tv/courses/unity-turn-based-strategy) on GameDev.tv, but many of the feature of Panic at the Dojo have been implemented by myself, like the hex grid, turn system, push and pull actions and more. This is my first attempt at making something like this so forgive me if some things are a bit weird.
+You can play the current build of the game [here](https://play.unity.com/en/games/7d1bc87c-6fa8-4ff2-b507-eb80075d46f6/builds).
