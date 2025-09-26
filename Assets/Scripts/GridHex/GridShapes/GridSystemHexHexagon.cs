@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.Mathematics;
+#if UNITY_EDITOR
 using UnityEditor.PackageManager;
+#endif
 using UnityEngine;
 
 public class GridSystemHexHexagon<TGridObject>: GridSystemHex<TGridObject> where TGridObject: IHasNeighbors

@@ -3683,7 +3683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionButtonPrefab: {fileID: 2666084503544306002, guid: f4412bf553f2175488c11db1b5505544, type: 3}
   actionButtonContainerTransform: {fileID: 36122152}
-  bigGuy: {fileID: 1994998384}
+  masterContainer: {fileID: 1994998384}
   actionPointsText: {fileID: 1342311027}
 --- !u!1 &2020283549
 GameObject:
